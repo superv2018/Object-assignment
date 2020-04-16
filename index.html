@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Create and search car info </title>
+	</head>
+	<body>
+		<h1>Create and search for car info</h1>
+
+		<div id="container">
+			<div class="centre">
+			<section>
+				<h3>Add A new Car</h3>
+				<form action="#">
+					<div class="bb">
+						<label for="Lincence Plate">License Plate</label>
+						<input type="text" id="plate" required />
+					</div>
+					<div class="bb">
+						<label for="Car Marker">Maker</label>
+						<input type="text" id="maker" required />
+					</div>
+					<div class="bb">
+						<label for="Car Model">Model</label>
+						<input type="text" id="model" required />
+					</div>
+					<div class="bb">
+						<label for="Price">Price</label>
+						<input type="number" id="price" required />
+					</div>
+					<div class="bb">
+						<label for="Color">Color</label>
+						<input type="color" id="color" />
+					</div>
+					<div id="btn_div"><button id="button" onclick="createCar()">Add Car</button></div>
+				</form>
+				<section id="addedcar">
+					<p id="addedcarPlate"></p>
+					<p id="addedcarDiscount"></p>
+				</section>
+			</section>
+		    </div>
+			<section id="search">
+				<div>
+					<p>Search car here</p>
+					<input type="text" id="searchCarInput" required />
+					<button class="button" onclick="searchLicencePlate()"
+					>
+						Enter
+					</button>
+				</div>
+				</div>
+			</section>
+		</div>
+		<script src="object.js"></script>
+	</body>
+</html>
